@@ -3,8 +3,10 @@ body {
     color: black;
     margin: 20px;
     padding: 20px;
-    height: 20px;
+    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana gráfica */
 }
+
+
 
 h1,h2,h3 {
     font-family: 'Libre Baskerville', serif;
@@ -34,6 +36,16 @@ section {
     width: 265px;
     height: auto; 
 }
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Coloca el svg detrás del contenido de texto */
+}
+
 
 
 
