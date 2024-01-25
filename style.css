@@ -1,10 +1,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: black;
-    margin: 20px;
-    padding: 20px;
-    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana gráfica */
+    margin: 2%; /* Cambiado de píxeles a porcentaje */
+    padding: 2%; /* Cambiado de píxeles a porcentaje */
+    min-height: 100vh;
 }
+
 
 
 
@@ -43,9 +44,18 @@ svg {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Coloca el svg detrás del contenido de texto */
+    z-index: -1; 
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        margin: 5px;
+        padding: 5px;
+    }
 
+    .imagen-izquierda {
+        width: 100%;
+    }
+}
 
 
